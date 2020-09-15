@@ -1,4 +1,4 @@
-.ARGUMENT
+.ARGUMENT OBJECT
 Was reading through some of the examples found on the links. Took a little dive to learn more about the .argument object.
 After reading it to make sense of a line of code, I found the little gem that sated that it is outdated or depreciated
 and not to use it. 
