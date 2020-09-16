@@ -14,7 +14,9 @@ const links =
 
 var li = document.getElementById("week_list");
 
-for (var i = 0; i < links.length; i++) 
+links.forEach(fill_weeks())
+ 
+function fill_weeks()
 {
   var listItem = document.createElement("a");
   listItem.setAttribute("href", links[i].url); 
