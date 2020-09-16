@@ -23,8 +23,8 @@ for (i=0; i < links.length; i++)
   times = 1;
   document.getElementById("test").innerHTML = "this has gone through " + times;
   var listItem = document.createElement("a");
-  listItem.setAttribute("href", item[index].url); 
-  listItem.innerText = item[index].label;  
+  listItem.setAttribute("href", links[i].url); 
+  listItem.innerText = links[i].label;  
   li.appendChild(listItem);
   times++;
 }
