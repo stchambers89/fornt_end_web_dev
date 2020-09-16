@@ -1,7 +1,7 @@
 const links = 
 [
   {
-    label: "Week1 notes"
+    label: "Week 1 notes"
     
   },
 
@@ -11,13 +11,14 @@ const links =
   }
 ]
 
-var ul = document.querySelector("ul");
-var test = 1;
-for (var i = 0; i < links.length; i++) {
-  var link = links[i].label;
+var ol = document.querySelector("ol");
 
-  var listItem = document.createElement("ul");
-  listItem.textContent = link;
+for (var i = 0; i < links.length; i++) 
+{
+  var text = links[i].label;
 
-  ul.appendChild(listItem);
+  var listItem = document.createElement("ol");
+  listItem.textContent = text;
+
+  ol.appendChild(listItem);
 }
