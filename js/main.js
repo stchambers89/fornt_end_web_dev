@@ -16,11 +16,11 @@ var ol = document.querySelector("ol");
 
 for (var i = 0; i < links.length; i++) 
 {
-  var text = links[i].label;
-  var url = links[i].url
+  <!--var text = 
+  var url = links[i].url -->
 
   var listItem = document.createElement("ol");
-  listItem.textContent = text;
+  listItem.textContent = links[i].label;
  <!-- document.getElementById("ol").setAttribute("href", links[i].url); not sure if this will work. -->
   listItem.setAttribute("href", links[i].url); 
   ol.appendChild(listItem);
