@@ -12,16 +12,16 @@ const links =
   }
 ]
 
-var ol = document.querySelector("ol");
+var li = document.querySelector("li");
 
 for (var i = 0; i < links.length; i++) 
 {
   //var text = 
   //var url = links[i].url -->
 
-  var listItem = document.createElement("ol");
+  var listItem = document.createElement("li");
   listItem.textContent = links[i].label;
    //document.getElementById("ol").setAttribute("href", links[i].url); not sure if this will work.
   listItem.setAttribute("href", links[i].url); 
-  ol.appendChild(listItem);
+  li.appendChild(listItem);
 }
