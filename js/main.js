@@ -19,7 +19,7 @@ links.forEach(fill_weeks())
 function fill_weeks(item, index)
 {
   var listItem = document.createElement("a");
-  listItem.setAttribute("href", links[i].url); 
-  listItem.innerText = links[i].label;  
+  listItem.setAttribute("href", links.url); 
+  listItem.innerText = links.label;  
   li.appendChild(listItem);
 }
