@@ -21,8 +21,8 @@ function fill_weeks(item, index)
   times = 1;
   document.getElementById("test").innerHTML = "this has gone through " + times;
   var listItem = document.createElement("a");
-  listItem.setAttribute("href", links.url); 
-  listItem.innerText = links.label;  
+  listItem.setAttribute("href", item[index].url); 
+  listItem.innerText = item[index].label;  
   li.appendChild(listItem);
   times++;
 }
