@@ -21,7 +21,7 @@ for (var i = 0; i < links.length; i++)
 
   var listItem = document.createElement("ol");
   listItem.textContent = text;
-  var listUrl = 
-
+ <!-- document.getElementById("ol").setAttribute("href", links[i].url); not sure if this will work. -->
+  listItem.setAttribute("href", links[i].url); 
   ol.appendChild(listItem);
 }
