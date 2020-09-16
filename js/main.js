@@ -12,12 +12,12 @@ const links =
 ]
 
 var ul = document.querySelector("ul");
-
+var test = 1;
 for (var i = 0; i < links.length; i++) {
   var link = links[i].label;
 
   var listItem = document.createElement("ul");
   listItem.textContent = link;
 
-  ol.appendChild(listItem);
+  ul.appendChild(listItem);
 }
