@@ -1,21 +1,23 @@
-const links = [
+const links = 
+[
   {
-    label: "Week1 notes",
-    url: "week1/index.html"
+    label: "Week1 notes"
+    
   },
+
   {
-    label: "Week 2 notes",
-    url: "week2/index.html"
+    label: "Week 2 notes"
+    
   }
 ]
 
-var ol = document.querySelector("ol");
+var ul = document.querySelector("ul");
 
 for (var i = 0; i < links.length; i++) {
   var link = links[i].label;
 
-  var listItem = document.createElement("ol");
-  listItem.textContent = link.url;
+  var listItem = document.createElement("ul");
+  listItem.textContent = link;
 
   ol.appendChild(listItem);
 }
