@@ -7,21 +7,17 @@ const links =
   },
 
   {
-    label: "Week 2 notes"
-    
+    label: "Week 2 notes",
+    url: "week2/index.html"
   }
 ]
 
-var li = document.querySelector("li");
+var li = document.getElementById("week_list");
 
 for (var i = 0; i < links.length; i++) 
 {
-  //var text = 
-  //var url = links[i].url -->
-
-  var listItem = document.createElement("li");
-  listItem.textContent = links[i].label;
-   //document.getElementById("ol").setAttribute("href", links[i].url); not sure if this will work.
+  var listItem = document.createElement("a");
   listItem.setAttribute("href", links[i].url); 
+  listItem.innerText = links[i].label;  
   li.appendChild(listItem);
 }
