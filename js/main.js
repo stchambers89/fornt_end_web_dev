@@ -1,7 +1,7 @@
 const links = 
 [
   {
-    label: "Week 1 notes JS updated",
+    label: "Week 1 notes",
     url: "week1/index.html"
     
   },
@@ -12,19 +12,17 @@ const links =
   }
 ]
 
-var li = document.getElementById("week_list");
+const myList = document.getElementById("weekList");
 
-links.forEach(fill_weeks())
-
-function fill_weeks(item, index)
-for (i=0; i < links.length; i++)
-function fill_weeks()
+for (let i=0; i < links.length; i++)
 {
-  times = 1;
-  //document.getElementById("test").innerHTML = "this has gone through " + times;
-  var listItem = document.createElement("a");
-  listItem.setAttribute("href", item[index].url); 
-  listItem.innerText = item[index].label;  
-  li.appendChild(listItem);
-  times++;
+  let listItem = document.createElement("li");
+  let anchor = document.createElement("a");
+
+  anchor.setAttribute("href", links[i].url); 
+  anchor.innerText = links[i].label;
+
+  listItem.appendChild(anchor);
+  myList.appendChild(listItem);
+  
 }
