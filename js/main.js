@@ -16,6 +16,11 @@ const links =
   {label: "Week 14 notes", url: "week14/index.html"},
 ]
 
+const projects =
+[
+  {label: "Super Hero Quiz", url: "}
+]
+
 const myList = document.getElementById("weekList");
 
 for (let i=0; i < links.length; i++)
