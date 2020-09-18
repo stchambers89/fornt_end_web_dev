@@ -8,3 +8,10 @@ READINGS/SITEPOINT
 Attempted to log in using voucher purchased from BYUi bookstore. Voucher leads to error 404 site.
 Contacted bookstore, sitepoint and posted to class forum for solutions. 
 Update: Voucher fixed site works
+
+MORE READING:
+Started to read JS novice to ninja. The intro was good review, but it was on my break, so I didn't 
+get very far. 
+
+Started to add more index and weekly files at work as well. Added these directly to the git 
+repository since I have limited access at my work. The pull was sucsessful when I got home. 
