@@ -16,7 +16,6 @@ const links =
   {label: "Week 14 notes", url: "week14/index.html"},
 ]
 
-
 const myList = document.getElementById("weekList");
 
 for (let i=0; i < links.length; i++)
