@@ -36,7 +36,7 @@ for (let i=0; i < links.length; i++)
   
 }
 
-const myList = document.getElementById("projectList");
+const myList2 = document.getElementById("projectList");
 
 for (let i=0; i < links.length; i++)
 {
@@ -47,7 +47,7 @@ for (let i=0; i < links.length; i++)
   anchor.innerText = links[i].label;
 
   listItem.appendChild(anchor);
-  myList.appendChild(listItem);
+  myList2.appendChild(listItem);
   
 }
 
