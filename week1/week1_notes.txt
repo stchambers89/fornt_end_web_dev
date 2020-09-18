@@ -15,3 +15,21 @@ get very far.
 
 Started to add more index and weekly files at work as well. Added these directly to the git 
 repository since I have limited access at my work. The pull was sucsessful when I got home. 
+
+Weekly Video
+Make the software do something automatically so the user does not havce to. "do 0 steps will 
+make you happy without thinking about it"
+
+Bottom's of the screens are more accessable. keep this design in mind. 
+
+-speed has a great effect on the user expereince:
+-reduce image usage in apps/sites
+-use SVG when images
+-Reduce whitespace in CSS and JS files - may not seem like a lot, but it adds up
+
+common use items, toward the Bottom. primary controls within reach can make people think
+ the app runs faster. 
+
+make the important things first - make it simple to reduce the cognitive load.
+
+pagination (pahge-i-nation)- spliting up a form (if you do this make sure there is a progress bar)
