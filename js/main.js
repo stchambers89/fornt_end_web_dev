@@ -18,7 +18,7 @@ const links =
 
 const projects =
 [
-  {label: "Super Hero Quiz", url: "}
+  {label: "Super Hero Quiz", url: "quiz/index.html"}
 ]
 
 const myList = document.getElementById("weekList");
@@ -35,3 +35,19 @@ for (let i=0; i < links.length; i++)
   myList.appendChild(listItem);
   
 }
+
+const myList = document.getElementById("projectList");
+
+for (let i=0; i < links.length; i++)
+{
+  let listItem = document.createElement("li");
+  let anchor = document.createElement("a");
+
+  anchor.setAttribute("href", links[i].url); 
+  anchor.innerText = links[i].label;
+
+  listItem.appendChild(anchor);
+  myList.appendChild(listItem);
+  
+}
+
