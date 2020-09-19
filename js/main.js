@@ -1,4 +1,4 @@
-const links = 
+const notelinks = 
 [
   {label: "Week 1 notes", url: "week1/index.html"},
   {label: "Week 2 notes", url: "week2/index.html"},
@@ -13,41 +13,41 @@ const links =
   {label: "Week 11 notes", url: "week11/index.html"},
   {label: "Week 12 notes", url: "week12/index.html"},
   {label: "Week 13 notes", url: "week13/index.html"},
-  {label: "Week 14 notes", url: "week14/index.html"},
+  {label: "Week 14 notes", url: "week14/index.html"}
 ]
+
+const noteList = document.getElementById("weekList");
+
+for (let i=0; i < notelinks.length; i++)
+{
+  let listItem = document.createElement("li");
+  let anchor = document.createElement("a");
+
+  anchor.setAttribute("href", notelinks[i].url); 
+  anchor.innerText = notelinks[i].label;
+
+  listItem.appendChild(anchor);
+  noteList.appendChild(listItem);
+  
+}
 
 const projects =
 [
   {label: "Super Hero Quiz", url: "quiz/index.html"}
 ]
 
-const myList = document.getElementById("weekList");
+const projectList = document.getElementById("projectList");
 
-for (let i=0; i < links.length; i++)
+for (let i=0; i < projects.length; i++)
 {
-  let listItem = document.createElement("li");
+  let projectItem = document.createElement("li");
   let anchor = document.createElement("a");
 
-  anchor.setAttribute("href", links[i].url); 
-  anchor.innerText = links[i].label;
+  anchor.setAttribute("href", projects[i].url); 
+  anchor.innerText = projects[i].label;
 
-  listItem.appendChild(anchor);
-  myList.appendChild(listItem);
-  
-}
-
-const myList2 = document.getElementById("projectList");
-
-for (let i=0; i < links.length; i++)
-{
-  let listItem = document.createElement("li");
-  let anchor = document.createElement("a");
-
-  anchor.setAttribute("href", links[i].url); 
-  anchor.innerText = links[i].label;
-
-  listItem.appendChild(anchor);
-  myList2.appendChild(listItem);
+  projectItem.appendChild(anchor);
+  projectList.appendChild(projectItem);
   
 }
 
