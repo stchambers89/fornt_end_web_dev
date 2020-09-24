@@ -1,0 +1,20 @@
+What did I do since the last meeting?
+
+Considering this was the first meeting I will let you know what I have done. I was able to get the git repository up and running along with the VCS. Setting up the VSC, I must admit, was stressing me out, so I hit the interwebs to find a solution. Luckily, VS Code has some amazing tutorials. 
+I do like the freedom in this class as well. Getting the main.js set up and for each week to populate from the array was an interesting challenge as well. The whole repository is looking ok as a skeleton and I am now feeling more comfortable with dusting off my JS toolset. 
+
+
+What am I going to do next?
+
+I honestly want to take a deep dive into how HTML and JS communicate with each other. I can muddle my way through getting something to work, but here seems to be a disconnect of going from one language to another. This is something I want to become proficient with. To do this, I will study up on the DOM. 
+As far as my projects it is early in the term to really report more on this. 
+
+ 
+What are my blockers?
+
+The most frequent blockers that I come up against are myself and getting so stressed I can’t think straight. Because of my limited time I find myself trying to juggle working and studying at the same time. This doesn’t allow me to give full attention to my code and I can get frustrated. I am still practicing on walking away and taking a breather. 
+I study the best when I can see similar code and then sandbox it or break-and-make as I say. I truly want to read and understand not just how to do something but why it does it that way. This is a blocker that I will be trying to overcome throughout the term. I am sure more specific blockers will come up with time, but this is what I have for now. 
+
+
+Summary:
+So far, I am enjoying the class. Thank you for being active in the class. 

@@ -1,5 +1,0 @@
-const - let - var
-This is the first time that I have been exposed to these so I wanted to learn more. 
-Turns out var's have a global scope, while const and let have block scope. So to 
-midigate the chance of variables changing state it would be better to use const 
-if the variable never needs to change, or let if the data needs to be manipulated. 
