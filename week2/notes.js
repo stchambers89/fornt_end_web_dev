@@ -123,3 +123,34 @@ else
 {
     console.log(`the person is female`);
 }
+
+/*******************************************************************************
+* ---- CSS Refresh & bootstrap -------
+* Since it has been a while since I have done any frontend coding, I am taking
+* a few hours this week to refresh myself on CSS, but mainly bootstrap so my
+* page can A) look pretty, and B) be responsive. So I am going through
+* W3schools to go through a refresher course. 
+* - the page still looks rough - sorry about that. 
+*******************************************************************************/
+
+/*******************************************************************************
+* ---- Arrow functions -------
+* These are simplified functions that are fairly easy to read and use. However
+* they shoulf really only be used when the function is a one liner, else the
+* simplicity of the syntax is lost. 
+*******************************************************************************/
+
+const add = (x, y) => x + y;
+
+const hello = () => alert('Hello World!');
+
+let sumOfTwoNumbers = add(1,9); //will = 10
+
+//this assumes that we have a person class.
+const HappyBirthday = (person) => person.age + 1;
+
+//if calvin was 1 year old then this below would change his age to 2
+HappyBirthday(calvin);
+
+console.log(`happy birthday calvin, you are now ${calvin.age}`);
+// Happy birthday calvin, you are now 2

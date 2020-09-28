@@ -1,0 +1,165 @@
+/* COLOR SCHEME
+Blue: rgb(37, 107, 151)
+Green: rgb(80, 200, 120)
+Yellow: rgb(240, 183, 60)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    background-color:rgb(37, 107, 151);
+    padding: 15px;
+    border-bottom:rgb(80, 200, 120);
+    border-width: 2px;
+}
+
+
+ 
+.assignments {
+    background-color:white;
+    float: left;
+    padding: 10px;
+   
+}
+  
+  /*Style the topnav links */
+.assignments a {
+    float: left;
+    display: block;
+    color:rgb(7, 21, 46);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+/* Change color on hover */
+.assignments a:hover {
+    background-color: rgb(80, 200, 120);
+    color: black;
+}
+  
+h1 {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-size:2em;
+    text-decoration: underline rgb(240, 183, 60);
+    text-align: center;
+}
+
+
+.left {
+    padding:2px;
+    float:left;
+    width:15%; /* The width is 20%, by default */
+    height: auto;
+    text-align: center;
+}
+
+
+  
+.middle {
+    padding:20px;
+    float:left;
+    width:40%; /* The width is 60%, by default */
+}
+  
+.right {
+    border: solid 3px white;
+    padding:2px;
+    float:left;
+    width:35%; /* The width is 20%, by default */
+    height: auto;
+    text-align: center;
+}
+
+#newSchool {
+    max-width: 100%;
+    height: 400px;
+}
+
+#patrons {
+    width: 100%;
+    height: auto;
+    border-bottom: solid 5px white; /* give spacing between pic and button */
+    padding:5px;
+}
+
+.footer {
+    background-color:rgb(37, 107, 151);
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+    border-top: rgb(80, 200, 120);
+    border-width: 2px;
+  }
+
+.bottom {
+    text-align: center;
+    background-color: black;
+    padding:2 ;
+    
+}
+
+#homeLink {
+    color: white;
+    text-decoration: underline white;
+}
+
+.footer a:hover {
+    color: rgba(0, 132, 255, 0.603);
+}
+
+
+
+#backToTop {
+    color:white;
+    background-color: rgb(65, 64, 64);
+    border: solid red 2px;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.backToTop {
+    padding:2px;
+    margin-bottom: 6px;
+    
+}
+
+div.clear {
+    clear: both;
+    margin: 10px;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+.center {
+    text-align: center;
+}
+
+
+/* screen parameters */
+@media screen and (max-width: 786px) {
+    .topbar a {
+        float: none;
+        width: 100%;
+    }
+
+    .left, .middle, .right {
+        width: 100%;
+    }
+    .xan, .quote {
+        width: 100%;
+        height: auto;
+        float: right;
+    }
+  }

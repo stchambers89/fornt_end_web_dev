@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang= "en-us">
+	<head>
+		<title>Team 6 activity 1</title>
+		<meta charset="utf-8">
+		<meta name="author" content="Steven Chambers, Tim Wells, Barbara Dias Batista">
+		<meta name="keywords" content = "">
+		<meta name="description" content = "">
+		<meta name="viewport" content="width=device=width, initial-scale=1.0">
+
+     	<!--External Doc - CSS -->
+    	<!-- <link rel="stylesheet" type="text/css" href="file_name.css"> -->
+	</head>
+	 
+	<body> 
+		<h2>Please input Text</h2>
+		<input type="text" id="input" name="input">
+        <button type="button" onclick=getText()> Submit </button>
+        <div id="myDiv1"></div>
+        <br>
+        <h2>Please input a number</h2>
+        <input type="number" id="number" name="number">
+        <button type="button" onclick=calculateNumbers()> Submit </button>
+        <div id="myDiv2"></div>        
+	</body>
+	
+	<script>
+		function getText()
+        {
+            let userInput = document.getElementById("input").value;
+            document.getElementById("myDiv1").innerHTML = userInput;  
+        }
+
+        function calculateNumbers()
+        {
+            const number = document.getElementById("number").value;
+            let total = 0;
+            for(let i = 1;i <= number; i++)
+            {
+                total += i;
+            }
+            document.getElementById("myDiv2").innerHTML = `the total of all numbers is: ${total}`;  
+        }
+
+	</script> 
+
+</html> 
