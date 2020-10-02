@@ -24,6 +24,14 @@ function validateNumber()
     
 }
 
+function mean()
+{
+    let dataLength = dataSet.length();
+    const sum = dataSet.reduce((a, b) => a + b, 0);
+    const avg = (sum / dataLength);
+    console.log(`The sum is: ${sum}. The average is: ${avg}.`);
+}
+
 
 
 /*function stdDeviation(...args)
