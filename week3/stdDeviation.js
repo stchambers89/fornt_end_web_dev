@@ -34,7 +34,7 @@ function mean()
 
  function removeData()
       {
-        if(Array.isArray(dataset) && array.length)
+        if(Array.isArray(dataset) && dataSet.length)
         {
           dataSet.pop();
         }
