@@ -9,13 +9,27 @@
 		<meta name="viewport" content="width=device=width, initial-scale=1.0">
 
      	<!--External Doc - CSS -->
-    	<link rel="stylesheet" type="text/css" href="file_name.css">
+    	<!-- <link rel="stylesheet" type="text/css" href="file_name.css"> -->
 	</head>
 	 
 	<body> 
 
-		<p>This is a test</p>
-
+		<h1>Standard Deviation Calculator</h1>
+		<p>Please enter in your data pooints below and hit enter after each one. Your data will be shown below. When ready press calculate. If you have entered in an incorrect data point, click the remove button to remove the last data point. </p>
+		<br>
+		<P>Things needed</P>
+		<ul>
+			
+			<li>data input box</li>
+			<li>add to list on enter</li>
+			<li>display entered data</li>
+			<li>remove last data point</li>
+			<li>calulations display</li>
+		</ul>
+		<h2>Enter Data Below</h2>
+		<p>Press enter key after entering in a value</p>
+		<input type="text" id="data" name="data">
+		<button onclick="validateNumber()">Add Data</button>
  
  		<!--Bottom Seperator: simple line break with link back to assignments homepage -->
 		<hr>
@@ -26,6 +40,6 @@
 
 	</body>
 	<!--External .JS file-->
-	<script src="main.js"></script>
+	<script src="stdDeviation.js"></script>
 
 </html> 

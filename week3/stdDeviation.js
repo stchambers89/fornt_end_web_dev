@@ -1,4 +1,32 @@
-function stdDeviation(...args)
+
+var dataSet = [];
+
+/*let data = document.getElementById("data");
+wage.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) //checks whether the pressed key is "Enter"
+    {   
+        validate(e)
+    }
+}); */
+
+function validateNumber()
+{
+    let input = document.getElementById("data").value;
+    parseFloat(input);
+    dataSet.push(input);
+    //alert(`added ${input}`);
+   
+    console.log(dataSet[0]);
+    console.log(dataSet[1]);
+    
+
+    
+    
+}
+
+
+
+/*function stdDeviation(...args)
 {
     const setLength = args.length;
     const mean = mean(args);
@@ -35,4 +63,4 @@ function stdDeviation(...args)
 
     let finalTotal = Math.sqrt(deviation);
 
-}
+}*/
