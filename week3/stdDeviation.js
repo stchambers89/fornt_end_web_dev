@@ -32,26 +32,26 @@ function mean()
     console.log(`The sum is: ${sum}. The average is: ${avg}.`);
 }
 
- function removeData()
-      {
-        if(Array.isArray(dataset) && dataSet.length)
-        {
-          dataSet.pop();
-        }
-        else
-        {
-          alert("No data to remove");
-        }
-      }
+function removeData()
+{
+    if(Array.isArray(dataset) && dataSet.length)
+    {
+        dataSet.pop();
+    }
+    else
+    {
+        alert("No data to remove");
+    }
+}
 
 function showDataSet()
-      {   
-        const length = dataSet.length();
-        for(let i =0; i < length; i++)
-        {
-          console.log(`${dataSet[i]}`);
-        }
-      }   
+{   
+    const length = dataSet.length();
+    for(let i =0; i < length; i++)
+    {
+        console.log(`${dataSet[i]}`);
+    }
+}   
 
 /*function stdDeviation(...args)
 {
