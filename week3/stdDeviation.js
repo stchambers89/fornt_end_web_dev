@@ -32,10 +32,17 @@ function mean()
     console.log(`The sum is: ${sum}. The average is: ${avg}.`);
 }
 
-function removeData()
-{
-    dataSet.pop();
-}
+ function removeData()
+      {
+        if(Array.isArray(dataset) && array.length)
+        {
+          dataSet.pop();
+        }
+        else
+        {
+          alert("No data to remove");
+        }
+      }
 
 function showDataSet()
       {   
