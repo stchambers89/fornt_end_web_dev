@@ -35,5 +35,4 @@ function stdDeviation(...args)
 
     let finalTotal = Math.sqrt(deviation);
 
-
 }
