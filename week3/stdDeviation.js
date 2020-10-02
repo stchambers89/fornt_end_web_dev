@@ -32,7 +32,19 @@ function mean()
     console.log(`The sum is: ${sum}. The average is: ${avg}.`);
 }
 
+function removeData()
+{
+    dataSet.pop();
+}
 
+function showDataSet()
+      {   
+        const length = dataSet.length();
+        for(let i =0; i < length; i++)
+        {
+          console.log(`${dataSet[i]}`);
+        }
+      }   
 
 /*function stdDeviation(...args)
 {
