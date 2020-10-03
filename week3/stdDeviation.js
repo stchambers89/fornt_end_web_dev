@@ -11,32 +11,32 @@ wage.addEventListener("keydown", function (e) {
 
 function validateNumber()
 {
-    let input = document.getElementById("data").value;
+    let input = parseFloat(document.getElementById("data").value);
     parseFloat(input);
     dataSet.push(input);
-    //alert(`added ${input}`);
-   
-    console.log(dataSet[0]);
-    console.log(dataSet[1]);
+    //showDataSet();
     
 
     
     
 }
 
+//function works with a pre-filled array.  will need to replace inside standard dev()
 function mean()
 {
-    let dataLength = dataSet.length();
-    const sum = dataSet.reduce((a, b) => a + b, 0);
+    let dataLength = dataSet.length;
+    let sum = dataSet.reduce((acc, val) => acc + val, 0);
     const avg = (sum / dataLength);
     console.log(`The sum is: ${sum}. The average is: ${avg}.`);
 }
 
+//function works removes last element
 function removeData()
 {
-    if(Array.isArray(dataset) && dataSet.length)
+    if(Array.isArray(dataSet) && dataSet.length)
     {
         dataSet.pop();
+        showDataSet();
     }
     else
     {
@@ -44,19 +44,21 @@ function removeData()
     }
 }
 
+
+
 function showDataSet()
 {   
-    const length = dataSet.length();
+    const length = dataSet.length;
     for(let i =0; i < length; i++)
     {
-        console.log(`${dataSet[i]}`);
+        console.log(`${dataSet[i]}, `);
     }
 }   
 
-/*function stdDeviation(...args)
+function stdDeviation()
 {
-    const setLength = args.length;
-    const mean = mean(args);
+    const setLength = dataSet.length;
+    const mean = mean(dataSet);
     let deviation = getDeviation(args);
 
 

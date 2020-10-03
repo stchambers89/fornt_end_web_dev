@@ -13,6 +13,8 @@
 	</head>
 	 
 	<body> 
+	
+	<div class="input">
 
 		<h1>Standard Deviation Calculator</h1>
 		<p>Please enter in your data pooints below and hit enter after each one. Your data will be shown below. When ready press calculate. If you have entered in an incorrect data point, click the remove button to remove the last data point. </p>
@@ -26,11 +28,17 @@
 			<li>remove last data point</li>
 			<li>calulations display</li>
 		</ul>
-		<h2>Enter Data Below</h2>
-		<p>Press enter key after entering in a value</p>
-		<input type="text" id="data" name="data">
-		<button onclick="validateNumber()">Add Data</button>
- 
+			<h2>Enter Data Below</h2>
+			<p>Press enter key after entering in a value</p>
+			<input type="number" id="data" name="data">
+	</div>
+	
+
+	 <button onclick="validateNumber()">Add Data</button>
+	 <button onclick="removeData()">Remove Data</button>
+	 <button onclick="mean()">Calculate</button>
+
+	
  		<!--Bottom Seperator: simple line break with link back to assignments homepage -->
 		<hr>
 		<div class ="bottom">
