@@ -17,9 +17,6 @@ function validateNumber()
     dataSet.push(input);
 }
 
-//function works with a pre-filled array.  will need to replace inside standard dev()
-
-
 //function works removes last element
 function removeData()
 {
@@ -90,9 +87,11 @@ function stdDeviation()
     console.log(`calculated mean: ${setMean}`);
     console.log(`varaince : ${variance}`);
     let standardDev = Math.sqrt(variance);
-
-
-
     console.log(`Standard deviation of population: ${standardDev}`);
+
+    //Send it to the internet!
+    document.getElementById("size").innerHTML =`Your group size is: ${setLength}`;
+    document.getElementById("mean").innerHTML =`Your mean is: ${setMean}`;
+    document.getElementById("popSD").innerHTML =`Your standard Deviation of a population is: ${standardDev}`;
 
 }
