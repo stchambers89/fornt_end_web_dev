@@ -8,6 +8,24 @@ wage.addEventListener("keydown", function (e) {
     {   
         validate(e)
     }
+    
+    //Validate loop and logic from stackOF
+    var languages = {
+        english: "Hello!",
+        french: "Bonjour!",
+        notALanguage: 4,
+        spanish: "Hola!"
+    };
+
+    // print hello in the 3 different languages
+    for(var hello in languages){
+        var value = hello;
+        if (typeof value === "string"){
+        console.log(value); 
+        }
+    }
+    
+    
 }); */
 
 function validateNumber()
