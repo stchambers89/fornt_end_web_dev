@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang= "en-us">
 	<head>
-		<title>Week 3</title>
+		<title>Search Page</title>
 		<meta charset="utf-8">
 		<meta name="author" content="Steven Chambers">
 		<meta name="keywords" content = "">
@@ -9,24 +9,28 @@
 		<meta name="viewport" content="width=device=width, initial-scale=1.0">
 
      	<!--External Doc - CSS -->
-    	<link rel="stylesheet" type="text/css" href="file_name.css">
+    	<!-- <link rel="stylesheet" type="text/css" href="file_name.css"> -->
 	</head>
 	 
 	<body> 
-            <h1> week 4 landing page</h1>
-		
-        <a href="hero/hero.html">Hero form</a> <br>
-        <a href="search.html">Dummy search bar</a>
+        <form name='search' action='/search'>
+            <input type='text' name='search-box' placeholder='Search Here'>
+            <button type='submit'>Search</button>
+
+           
+        </form>
+    		
+
  
  		<!--Bottom Seperator: simple line break with link back to assignments homepage -->
 		<hr>
 		<div class ="bottom">
-    		<a href="../index.html"> To Previous </a>
+    		<a href="index.html"> To Previous </a>
 		</div>
 
 
 	</body>
 	<!--External .JS file-->
-	<script src="file_name.js"></script>
+	<script src="main.js"></script>
 
 </html> 

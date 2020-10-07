@@ -1,6 +1,5 @@
 
-var dataSet = [];
-let dataSetAvg = [];
+let dataSet = [];
 
 /*let data = document.getElementById("data");
 wage.addEventListener("keydown", function (e) {
@@ -40,7 +39,7 @@ function stdDeviation()
     let variance = squareVariance();
     
 
-    //done and good
+   
     //Part 1 Find mean of data set
     function mean()
     {
@@ -51,21 +50,14 @@ function stdDeviation()
 
     function getVariance()
     {
-    //manipulate each data point (Xi - U)^2
+        let total = 0;
+        //manipulate each data point (Xi - U)^2
         for(let i = 0; i < setLength; i++)
         {
-        //Math.pow(base, exponent)
-            dataSetAvg[i] = Math.pow((dataSet[i] - setMean), 2);
-            console.log(`Array element ${i} after set Averages and squared: ${dataSetAvg[i]}`)
+            let variance = Math.pow((dataSet[i] - setMean), 2);
+            total += variance;
         }
-
-        //total data
-        let total = 0;
-        for(let j = 0; j < setLength; j++)
-        {
-            total += dataSetAvg[j];
         
-        }
         return total;
     }
 
@@ -73,21 +65,13 @@ function stdDeviation()
     function squareVariance()
     {
         let calculation = (1/setLength) * totalVariance;
-        /*let total = dataSetAvg.reduce((acc, val) => acc + val, 0);
-        let total = 0;
-        for(let i = 0; i < setLength; i++)
-        {
-            total += dataSet[i];
-        }
-        
-        let variance = total//(1/setLength) * total;*/
         return calculation;
     }
 
-    console.log(`calculated mean: ${setMean}`);
-    console.log(`varaince : ${variance}`);
+    //console.log(`calculated mean: ${setMean}`);
+    //console.log(`varaince : ${variance}`);
     let standardDev = Math.sqrt(variance);
-    console.log(`Standard deviation of population: ${standardDev}`);
+    //console.log(`Standard deviation of population: ${standardDev}`);
 
     //Send it to the internet!
     document.getElementById("size").innerHTML =`Your group size is: ${setLength}`;
