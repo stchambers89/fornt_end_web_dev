@@ -19,18 +19,15 @@ wage.addEventListener("keydown", function (e) {
     // print hello in the 3 different languages
     for(var hello in languages){
         var value = hello;
-        if (typeof value === "string"){
-        console.log(value); 
-        }
+        
     }
     
     
 }); */
 
-function validateNumber()
+function addNumber()
 {
-    let input = parseFloat(document.getElementById("data").value);
-    parseFloat(input);
+    let input = parseFloat(document.getElementById("data").value);    
     dataSet.push(input);
 }
 
