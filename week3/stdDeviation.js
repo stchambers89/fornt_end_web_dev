@@ -29,6 +29,10 @@ function addNumber()
 {
     let input = parseFloat(document.getElementById("data").value);    
     dataSet.push(input);
+    for(item in dataSet)
+    {
+        document.getElementById("numberList").innerHTML = `${dataSet}`;
+    }
 }
 
 //function works removes last element
@@ -37,11 +41,16 @@ function removeData()
     if(Array.isArray(dataSet) && dataSet.length)
     {
         dataSet.pop();
-        //showDataSet();
+        for(item in dataSet)
+        {
+            document.getElementById("numberList").innerHTML = `${dataSet}`;
+        }
     }
     else
     {
+        document.getElementById("numberList").innerHTML = `${dataSet}`;
         alert("No data to remove");
+        
     }
 }
 

@@ -31,6 +31,7 @@
 			<h2>Enter Data Below</h2>
 			<p>Press enter key after entering in a value</p>
 			<input type="number" id="data" name="data" placeholder="Enter Datapoint here"> 
+			<p id="numberList"></p>
 	</div>
 
 	<div>
@@ -41,7 +42,7 @@
 	</div>
 
 
-	 <button onclick="addNumber()">Add Data</button>
+	 <button onclick="addNumber(), document.getElementById('data').value = ''">Add Data</button>
 	 <button onclick="removeData()">Remove Data</button>
 	 <button onclick="stdDeviation()">Calculate</button>
 
