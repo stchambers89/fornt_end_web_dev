@@ -19,30 +19,22 @@
 		<h1>Standard Deviation Calculator</h1>
 		<p>Please enter in your data pooints below and hit enter after each one. Your data will be shown below. When ready press calculate. If you have entered in an incorrect data point, click the remove button to remove the last data point. </p>
 		<br>
-		<P>Things needed</P>
-		<ul>
-			
-			<li>Done: data input box</li>
-			<li>Done add to list on click</li>
-			<li>display entered data</li>
-			<li>Done: remove last data point on click</li>
-			<li>calulations display</li>
-		</ul>
-			<h2>Enter Data Below</h2>
-			<p>Press enter key after entering in a value</p>
-			<input type="number" id="data" name="data" placeholder="Enter Datapoint here"> 
-			<p id="numberList"></p>
+		<h2>Enter Data Below</h2>
+		<p>Press enter key after entering in a value</p>
+		<input type="number" id="data" name="data" placeholder="Enter data here" size=20> 
+		<button onclick="addNumber(), document.getElementById('data').value = ''">Add Data</button>
+		<p id="numberList"></p>
 	</div>
 
 	<div>
 		<p id="size"></p>
 		<p id="mean"></p>
 		<p id="popSD"></p>
+		<p id="sampleSD"></p>
+
 
 	</div>
 
-
-	 <button onclick="addNumber(), document.getElementById('data').value = ''">Add Data</button>
 	 <button onclick="removeData()">Remove Data</button>
 	 <button onclick="stdDeviation()">Calculate</button>
 

@@ -60,7 +60,8 @@ function stdDeviation()
     const setLength = dataSet.length;
     let setMean = mean(); //works correctly. 
     let totalVariance = getVariance();
-    let variance = squareVariance();
+    let populationSD = populationVariance();
+    let sampleSD = sampleVariance();
     
 
    
@@ -86,20 +87,29 @@ function stdDeviation()
     }
 
     //individual deviations / # of dataSet elements
-    function squareVariance()
+    function populationVariance()
     {
         let calculation = (1/setLength) * totalVariance;
-        return calculation;
+        let squaredPopulation = Math.sqrt(calculation)
+        return squaredPopulation;
+    }
+
+    function sampleVariance()
+    {
+        let calculation = (1/(setLength - 1)) * totalVariance;
+        let squaredSample = Math.sqrt(calculation)
+        return squaredSample;
     }
 
     //console.log(`calculated mean: ${setMean}`);
     //console.log(`varaince : ${variance}`);
-    let standardDev = Math.sqrt(variance);
+    //let standardDev = Math.sqrt(variance);
     //console.log(`Standard deviation of population: ${standardDev}`);
 
     //Send it to the internet!
     document.getElementById("size").innerHTML =`Your group size is: ${setLength}`;
     document.getElementById("mean").innerHTML =`Your mean is: ${setMean}`;
-    document.getElementById("popSD").innerHTML =`Your standard Deviation of a population is: ${standardDev}`;
+    document.getElementById("popSD").innerHTML =`Your standard Deviation of a population is: ${populationSD}`;
+    document.getElementById("sampleSD").innerHTML =`Your estimated standard Deviation of a sample size is: ${sampleSD}`;
 
 }
