@@ -5,88 +5,56 @@ Yellow: rgb(240, 183, 60)
 */
 
 * {
-    box-sizing: border-box;
+     box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(194, 197, 197)
+}
+
+#main_img {
+    width: 100%;
+    height: auto;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
 }
 
 .header {
-    background-color:rgb(37, 107, 151);
-    padding: 15px;
-    border-bottom:rgb(80, 200, 120);
-    border-width: 2px;
+  background-color: rgb(37, 107, 151);
+  color: #ffffff;
+  padding: 15px;
 }
 
-
- 
-.assignments {
-    background-color:white;
-    float: left;
-    padding: 10px;
-   
-}
-  
-  /*Style the topnav links */
-.assignments a {
-    float: left;
-    display: block;
-    color:rgb(7, 21, 46);
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-  
-/* Change color on hover */
-.assignments a:hover {
-    background-color: rgb(80, 200, 120);
-    color: black;
-}
-  
-h1 {
-    color: white;
-    text-align: center;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-h3 {
-    font-size:2em;
-    text-decoration: underline rgb(240, 183, 60);
-    text-align: center;
+.menu li {
+  padding: 8px;
+  text-align: center;
+  margin-bottom: 7px;
+  background-color: rgb(80, 200, 120);
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-
-.left {
-    padding:2px;
-    float:left;
-    width:15%; /* The width is 20%, by default */
-    height: auto;
-    text-align: center;
-}
-
-
-  
-.middle {
-    padding:20px;
-    float:left;
-    width:40%; /* The width is 60%, by default */
-}
-  
-.right {
-    border: solid 3px white;
-    padding:2px;
-    float:left;
-    width:35%; /* The width is 20%, by default */
-    height: auto;
-    text-align: center;
-}
-
-#newSchool {
-    max-width: 100%;
-    height: 400px;
-}
-
-#patrons {
-    width: 100%;
-    height: auto;
-    border-bottom: solid 5px white; /* give spacing between pic and button */
-    padding:5px;
+.menu li:hover {
+  background-color: rgb(240, 183, 60);
 }
 
 .footer {
@@ -116,17 +84,6 @@ h3 {
 }
 
 
-
-#backToTop {
-    color:white;
-    background-color: rgb(65, 64, 64);
-    border: solid red 2px;
-    text-decoration: none;
-    padding: 4px;
-    border-radius: 5px;
-    margin: 20px;
-}
-
 .backToTop {
     padding:2px;
     margin-bottom: 6px;
@@ -148,18 +105,38 @@ div.clear {
 
 
 /* screen parameters */
-@media screen and (max-width: 786px) {
-    .topbar a {
-        float: none;
-        width: 100%;
-    }
-
-    .left, .middle, .right {
-        width: 100%;
-    }
-    .xan, .quote {
-        width: 100%;
-        height: auto;
-        float: right;
-    }
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
   }

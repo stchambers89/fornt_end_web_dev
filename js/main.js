@@ -47,7 +47,7 @@ for (let i=0; i < projects.length; i++)
   anchor.innerText = projects[i].label;
 
   projectItem.appendChild(anchor);
-  projectList.appendChild(projectItem);
+  //projectList.appendChild(projectItem);
   
 }
 
