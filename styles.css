@@ -67,7 +67,14 @@ html {
     border-width: 2px;
   }
 
-.bottom {
+.topLeft {
+    width: 12em;
+    float: left;
+    padding-right: 15px;
+    padding-bottom: 10px;
+}
+
+  .bottom {
     text-align: center;
     background-color: black;
     padding:2 ;
