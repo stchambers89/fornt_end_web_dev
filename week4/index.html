@@ -1,34 +1,113 @@
 <!DOCTYPE HTML>
 <html lang= "en-us">
 	<head>
-		<title>Week 3</title>
+		<title>Week 4</title>
 		<meta charset="utf-8">
 		<meta name="author" content="Steven Chambers">
 		<meta name="keywords" content = "">
 		<meta name="description" content = "">
-		<meta name="viewport" content="width=device=width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
      	<!--External Doc - CSS -->
-    	<link rel="stylesheet" type="text/css" href="file_name.css">
+    	<link rel="stylesheet" type="text/css" href="\week4\styles.css">
 	</head>
 	 
 	<body> 
-            <h1> week 4 landing page</h1>
-		
-        <a href="hero/hero.html">Hero form</a> <br>
-		<a href="search.html">Dummy search bar</a> <br>
-		<a href="standard_dev_calc.html">Updated Standard Deviation Calculator</a>
+
+		<div class="header" name="header" id="header">
+			<h1>Week 4</h1>
+			<h3>Improved Calculator, OOP, and Modern JS</h3>
+		</div>
+	  
+		<div class="row">
+			<div class="col-3 menu">
+				<ul>
+					<li><a href="hero/hero.html">Hero form</a></li>
+					<li><a href="search.html">Dummy search bar</a></li>
+					<li><a href="standard_dev_calc.html">Updated Standard Deviation Calculator</a></li>
+				</ul>
+			</div>
+	  
+			<div class="col-6 col-s-9">
+			
+			  
+			<p> Using Classes in JavaScript
+				Classes are pretty fun once you get to know how to use them. At first, I was a bit confused about the
+				constructor formatting and used the dice example but added a method to test the default constructor.
+				<br>
+				<code class="code">
+				const Dice = function(sides=6) <br>
+				{<br>
+				    this.sides = sides;<br>
+				    this.roll = function() <br>
+				    {<br>
+				        return Math.floor(this.sides * Math.random() + 1)<br>
+				    }<br>
+				    this.display = function()<br>
+				    {<br>
+				        document.getElementById(&quot;demo&quot;).innerHTML = <br>
+					 	`this dice has ${this.sides} sides`;<br>
+				    }<br>
+				}<br>
+				</code>
+				<br>
+				I wanted to test different size dice to make sure the object functions as I thought that it would:
+				<code class="code"><br>
+					d8 = new Dice(8);<br>
+				    d8.display();<br>
+				</code>
+				<br>
+
+				This resulted in an 8 sided die being created with the instance name of d8. The page displayed fine and
+				showed the dice had 8 sides.<br><br>
+				
+				JavaScript also allows you to add attributes and methods to a class. Each class has a prototype, this is
+				essentially you being able to access the object blue print and modify it. This is accessing the prototype
+				and adding a critical hit function to each dice.<br><br>
+				
+				<code class="code">
+				Dice.prototype.critical = function()<br>
+				{<br>
+				    const critroll = this.roll();<br>
+				    return (critroll * 2);<br>
+				}<br>
+				</code><br>
+				
+				After this is done, any object that is a model or instance of the type Dice will now have access to the
+				critical function. To Identify what prototype an object is you can use the following code:<br>
+				<code class="code"><br>
+					Object.getPrototypeOf(d8);
+				</code><br><br>
+				
+				Prototypes should be used to manipulate objects if every instance of that object needs the attribute or
+				method that is added or changed. So, adding the method of critical() is a good example, every dice is
+				capable of that method. However, accessing the prototype to add a color is not, each dice could have a
+				different color and we would want to update each instance of the dice individually.<br>
+				
+				Modular JS:<br>
+				Simply put a module is a small self-contained file, this file can be loaded with variable contants,
+				functions, and or ojbects that are like minded. If you are doing statistics you may have a stats module
+				that you can import special functions from without needing a huge clunky library. You can even only
+				export functions or parts of the module that you need, it’s not an all or nothing export. More like a
+				buffet that you can pick or choose from. You can even nickname the module and use dot notation to
+				access it.
+				</p>
+
+			</div>
+		</div>
+	  
+        
 		
  
  		<!--Bottom Seperator: simple line break with link back to assignments homepage -->
 		<hr>
-		<div class ="bottom">
-    		<a href="../index.html"> To Previous </a>
+		<div class ="footer" >
+    		<a href="../index.html" id="homeLink"> To Previous </a>
 		</div>
 
 
 	</body>
 	<!--External .JS file-->
-	<script src="file_name.js"></script>
+	<!-- <script src="file_name.js"></script> -->
 
 </html> 
