@@ -4,21 +4,16 @@ let list = [];
 const theList = document.getElementById("theList");
 const input = document.querySelector("#input");
 
-//Get class names from HTML
-const CHECK = "fas fa-check-circle"
-const UNCHECK = "far fa-arrow-alt-circle-right"
-const CROSSOUT = 
 
-
-input.addEventListener('keypress', function (e) 
+//To do adds on enter
+input.addEventListener('keyup', function (e) 
 {
     if (e.key === 'Enter') {
         enter();
       }
   });
 
-
-
+//enters the actual value and displays to HTML
 function enter()
 {
     if(input !== "")
@@ -27,13 +22,13 @@ function enter()
         if(item)
         {
             addItem(item);
-            /*list.push(
-                    { 
-                        name: item,
-                        itemNumber: itemNumber
-                    });
+            // list.push(
+            //         { 
+            //             name: item,
+            //             itemNumber: itemNumber
+            //         });
         
-        itemNumber++;*/
+        //itemNumber++;
         }
     }
     document.getElementById('input').value = '';
@@ -43,8 +38,13 @@ function enter()
 
 function addItem(item)
 {
+    //Get class names from HTML
+const DONE = "fas fa-check-circle"
+let NOTDONE = "far fa-arrow-alt-circle-right"
+//const CROSSOUT = 
+
     const toDoItem = `<li class="item">
-                    <i class="far fa-arrow-alt-circle-right onclick="complete()"</i>
+                    <i class="${NOTDONE}"</i>
                     <p class="text"> ${item}</p>
                     <i class="fas fa-times-circle"</i>
                     </li>`
