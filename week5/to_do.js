@@ -3,7 +3,7 @@ let list = [];
 //Get variable elements from HTML
 const theList = document.getElementById("theList");
 const input = document.querySelector("#input");
-
+let idNumber = 0;
 //Define class
 class Todo {
     constructor(item, id)
@@ -16,7 +16,6 @@ class Todo {
     }
 }
 
-let listPosition = 0;
 
 //To do adds on enter
 input.addEventListener('keyup', function (e) 
@@ -32,18 +31,22 @@ function enter()
     if(input !== "")
     {
         
+
         const item = input.value;
         if(item)
         {
-            let thingToDo = new Todo(item, listPosition)
+            let thingToDo = new Todo(item, idNumber)
             addItem(thingToDo);
             list.push(thingToDo);
-        
-        listPosition++;
+            console.log(`item: ${thingToDo.toDo} and the index is-${thingToDo.id}`)
         }
+
+        idNumber++;
     }
     document.getElementById('input').value = '';
     document.getElementById("input").focus();
+
+    
 }
 
 
