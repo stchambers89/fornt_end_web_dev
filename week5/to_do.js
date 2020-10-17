@@ -24,8 +24,7 @@ function enter()
             addItem(item);
             // list.push(
             //         { 
-            //             name: item,
-            //             itemNumber: itemNumber
+            //             NEED TO CREATE CUSTOM CLASS AND SET VAIABLES TO ALLOW CORRECT ICONS TO DISPLAY
             //         });
         
         //itemNumber++;
