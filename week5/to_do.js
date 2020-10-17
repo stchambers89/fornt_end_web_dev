@@ -7,6 +7,8 @@ let idNumber = 0;
 
 
 /// Need event listener connected to the id number of the icon element
+
+
 //Define class
 class Todo {
     constructor(item, id)
@@ -22,20 +24,7 @@ class Todo {
     {
         this.completed = true;
         this.icon = "fas fa-check-circle";
-    }
-
-    checkIcom()
-    {
-        if(this.completed==true)
-        {
-            this.icon = "fas fa-check-circle";
-        }
-        else
-        {
-            this.icon = "far fa-arrow-alt-circle-right"
-        }
-    }
-    
+    }    
 }
 
 
