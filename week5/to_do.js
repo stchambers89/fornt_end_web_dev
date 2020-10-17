@@ -4,6 +4,9 @@ let list = [];
 const theList = document.getElementById("theList");
 const input = document.querySelector("#input");
 let idNumber = 0;
+
+
+/// Need event listener connected to the id number of the icon element
 //Define class
 class Todo {
     constructor(item, id)
@@ -74,10 +77,10 @@ function addItem(item)
     //let status = item.completed == false ?  : ''
     //Get class names from HTML
 
-    item.complete();
+    
 
-    const toDoItem = `<li class="item">
-                    <i class="${item.icon}"</i>
+    const toDoItem = `<li class="item" >
+                    <i class="${item.icon}" id="${item.id}"></i>
                     <p class="text"> ${item.toDo}</p>
                     <i class="fas fa-times-circle"</i>
                     </li>`
