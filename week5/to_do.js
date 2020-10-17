@@ -4,6 +4,20 @@ let list = [];
 const theList = document.getElementById("theList");
 const input = document.querySelector("#input");
 
+//Define class
+class Todo {
+    constructor(item, id)
+    {
+        this.toDo = item;
+        this.id = id;
+        this.completed = false;
+        this.statusIcon;
+        this.done = "fas fa-check-circle";
+        this.notDone = "far fa-arrow-alt-circle-right";
+    }
+}
+
+let listPosition = 0;
 
 //To do adds on enter
 input.addEventListener('keyup', function (e) 
@@ -18,16 +32,15 @@ function enter()
 {
     if(input !== "")
     {
+        
         const item = input.value;
         if(item)
         {
-            addItem(item);
-            // list.push(
-            //         { 
-            //             NEED TO CREATE CUSTOM CLASS AND SET VAIABLES TO ALLOW CORRECT ICONS TO DISPLAY
-            //         });
+            let thingToDo = new Todo(item, listPosition)
+            addItem(thingToDo);
+            list.push(thingToDo);
         
-        //itemNumber++;
+        listPosition++;
         }
     }
     document.getElementById('input').value = '';
@@ -37,21 +50,15 @@ function enter()
 
 function addItem(item)
 {
+    let item.status = item.completed == false ? '' : ''
     //Get class names from HTML
-const DONE = "fas fa-check-circle"
-let NOTDONE = "far fa-arrow-alt-circle-right"
-//const CROSSOUT = 
 
     const toDoItem = `<li class="item">
-                    <i class="${NOTDONE}"</i>
-                    <p class="text"> ${item}</p>
+                    <i class="${status}"</i>
+                    <p class="text"> ${item.toDo}</p>
                     <i class="fas fa-times-circle"</i>
                     </li>`
 
 theList.insertAdjacentHTML("beforeend", toDoItem);
 }
 
-function complete(event)
-{
-    list.pop(item.target);
-}
