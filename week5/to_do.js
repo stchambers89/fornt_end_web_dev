@@ -10,10 +10,9 @@ class Todo {
     {
         this.toDo = item;
         this.id = id;
+        this.trash = false;
         this.completed = false;
-        this.statusIcon;
-        this.done = "fas fa-check-circle";
-        this.notDone = "far fa-arrow-alt-circle-right";
+        this.icon = "far fa-arrow-alt-circle-right";
     }
 }
 
@@ -50,7 +49,7 @@ function enter()
 
 function addItem(item)
 {
-    let item.status = item.completed == false ? '' : ''
+    let status = item.completed == false ?  : ''
     //Get class names from HTML
 
     const toDoItem = `<li class="item">
