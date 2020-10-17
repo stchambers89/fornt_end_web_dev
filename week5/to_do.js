@@ -49,11 +49,11 @@ function enter()
 
 function addItem(item)
 {
-    let status = item.completed == false ?  : ''
+    //let status = item.completed == false ?  : ''
     //Get class names from HTML
 
     const toDoItem = `<li class="item">
-                    <i class="${status}"</i>
+                    <i class="${item.icon}"</i>
                     <p class="text"> ${item.toDo}</p>
                     <i class="fas fa-times-circle"</i>
                     </li>`
