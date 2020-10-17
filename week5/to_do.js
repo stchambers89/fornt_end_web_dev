@@ -14,6 +14,19 @@ class Todo {
         this.completed = false;
         this.icon = "far fa-arrow-alt-circle-right";
     }
+
+    changeStatus()
+    {
+        if(completed==true)
+        {
+            this.icon = "fas fa-check-circle";
+        }
+        else
+        {
+            this.icon = "far fa-arrow-alt-circle-right"
+        }
+    }
+    
 }
 
 
