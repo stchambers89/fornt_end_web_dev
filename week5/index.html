@@ -59,7 +59,40 @@
 					 a lower level language like Java or C++. JavaScript Modules use strict mode automatically. <br><br>
 					
 					<b>Linting Tools</b><br>
-					These tools help you adhere to styling techniques such as spacing, using ++ or --, and indentations. 
+					These tools help you adhere to styling techniques such as spacing, using ++ or --, and indentations. <br><br>
+
+					<b>Using Objects and Classes in the to-do App:</b><br>
+					The to do app is a fun little project. At first I was trying to keep track of many elements and
+					 variables, but when you are dealing with multiple variables that are really the same thing, like
+					  an action that needs to be done, it gets very hard to follow and keep track. So, to simplify this
+					   by using a Class. A Class is simply a container that stores similar variables. My Todo class has
+						a few different parts. The actual text of what needs to be done, if it is done or not, the
+						 icon that shows the user if it is done or not, and if it needs to be deleted. Here is what
+						  it looks like:<br><br>
+						  <code class="code">
+					class Todo <br>
+					{<br>
+						constructor(item, id)<br>
+						{<br>
+							this.toDo = item;<br>
+							this.id = id;<br>
+							this.trash = false;<br>
+							this.completed = false;<br>
+							this.icon = "far fa-arrow-alt-circle-right";<br>
+						}<br>
+					
+						complete()<br>
+						{<br>
+							this.completed = true;<br>
+							this.icon = "fas fa-check-circle";<br>
+						}    <br>
+					}<br>
+				</code>
+				<br>
+					My hope is that this will act like a gatekeeper and an organizer to keep track of each item,
+					 and it’s status. The next week’s step will be adding even listeners to the icons within
+					  the object, allowing the user to interact with the to-do list. 
+					
 				</p>
 			</div>
 		</div>
