@@ -15,9 +15,15 @@ class Todo {
         this.icon = "far fa-arrow-alt-circle-right";
     }
 
-    changeStatus()
+    complete()
     {
-        if(completed==true)
+        this.completed = true;
+        this.icon = "fas fa-check-circle";
+    }
+
+    checkIcom()
+    {
+        if(this.completed==true)
         {
             this.icon = "fas fa-check-circle";
         }
@@ -67,6 +73,8 @@ function addItem(item)
 {
     //let status = item.completed == false ?  : ''
     //Get class names from HTML
+
+    item.complete();
 
     const toDoItem = `<li class="item">
                     <i class="${item.icon}"</i>
