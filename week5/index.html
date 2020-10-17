@@ -27,27 +27,40 @@
 			</div>
 	  
 			<div class="col-6 col-s-9">			  
-			    <p>event handling
-					This can be something that the HTML page does or the user does. Simply put the event handler “listens” for a specific event to happen. When it does, it allows you to trigger parts of your code that you specify. One of the most common events that I have seen is the “click” event. When the user clicks, something happens. Another common event is “mouse over”. If you move the mouse over a link it may change color to more readily identify where you are about to click. One event listener that I have used is the “keyup” that is linked to the enter button. So when the user clicks the enter button, upon release a part of my code will fire. The example is below:
+			    <p><b>Event Handling:</b><br>
+					This can be something that the HTML page does or the user does. Simply put the event 
+					handler “listens” for a specific event to happen. When it does, it allows you to
+					 trigger parts of your code that you specify. One of the most common events that
+					  I have seen is the “click” event. When the user clicks, something happens. Another 
+					  common event is “mouse over”. If you move the mouse over a link it may change 
+					  color to more readily identify where you are about to click. One event listener 
+					  that I have used is the “keyup” that is linked to the enter button. So when the user 
+					  clicks the enter button, upon release a part of my code will fire. 
+					  The example is below:<br><br>
+					  <code class="code">
+					input.addEventListener('keyup', function (e) //on keyup, run this<br>
+					{<br>
+						if (e.key === 'Enter') {  //if the event key up was the enter key<br>
+							enter(); //run this function<br>
+						  }<br>
+					  });<br>
+					</code><br>
 					
-					input.addEventListener('keyup', function (e) 
-					{
-						if (e.key === 'Enter') {
-							enter();
-						  }
-					  });
+					<b>Bubbling and Preventing Bubbling:</b><br> 
+					Bubbling goes from the inner element out, hitting each element in turn. until no event
+					listener is assigned to an element. <br><br>
 					
+					<b>Capturing:</b><br> 
+					Works the complete opposite. if you click on an outer element it will fire the outermost
+					 element, then work inward to where you clicked. <br><br>
 					
-					bubbling and preventing bubbling: Bubbling goes from the inner element out, hitting each element in turn. until no event listener is assigned to an element. 
+					<b>'use strict';</b><br>
+					This "locks down" the code and requires you to adhere to strict coding practices, more like
+					 a lower level language like Java or C++. JavaScript Modules use strict mode automatically. <br><br>
 					
-					Capturing: works the complete opposite. if you click on an outer element it will fire the outermost element, then work inward to where you clicked. 
-					
-					'use strict';
-					this "locks down" the code and requires you to adhere to strict coding practices, more like a lower level language like Java or C++. JavaScript Modules use strict mode automatically. 
-					
-					Linting Tools
+					<b>Linting Tools</b><br>
 					These tools help you adhere to styling techniques such as spacing, using ++ or --, and indentations. 
-					 </p>
+				</p>
 			</div>
 		</div>
 	  
