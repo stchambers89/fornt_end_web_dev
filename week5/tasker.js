@@ -1,5 +1,10 @@
+var toDoList = [];
+
+
+
 //Define class
-let tasker = {
+let tasker = 
+{
     construct: function()
     {
         this.selectElements();
@@ -18,12 +23,15 @@ let tasker = {
 
     createTask: function() 
     {
+        let id = 0;
         //create blank variables
         let taskListItem, taskCheckbox, taskValue, taskButton, taskTrash;
 
         //create the list item
         taskListItem = document.createElement("li");
-        taskListItem.setAttribute("class", "task")
+        taskListItem.setAttribute("class", "task");
+        taskListItem.setAttribute("id", id);
+        id++;
 
         //Create the checkbox
         taskCheckbox = document.createElement("input");
@@ -56,6 +64,11 @@ let tasker = {
         this.errorMessage.style.display = "block";
     },
 
+    saveLocal: function()
+    {
+        toDoList.push(this.taskValue);
+    },
+
     addTask: function()
     {
         let taskValue = this.taskInput.value;
@@ -67,6 +80,7 @@ let tasker = {
         }
         else
         {
+            this.saveLocal()
             this.createTask();
             this.taskInput.value = "";
             this.scanTaskList();
@@ -146,48 +160,4 @@ let tasker = {
 
 };
 
-
-
-
-
-// //enters the actual value and displays to HTML
-// function enter()
-// {
-//     if(input !== "")
-//     {
-        
-
-//         const item = input.value;
-//         if(item)
-//         {
-//             let thingToDo = new Todo(item, idNumber)
-//             addItem(thingToDo);
-//             list.push(thingToDo);
-//             console.log(`item: ${thingToDo.toDo} and the index is-${thingToDo.id}`)
-//         }
-
-//         idNumber++;
-//     }
-//     document.getElementById('input').value = '';
-//     document.getElementById("input").focus();
-
-    
-// }
-
-
-// function addItem(item)
-// {
-//     //let status = item.completed == false ?  : ''
-//     //Get class names from HTML
-
-    
-
-//     const toDoItem = `<li class="item" >
-//                     <i class="${item.icon}" id="icon"></i>
-//                     <p class="text"> ${item.toDo}</p>
-//                     <i class="fas fa-times-circle"</i>
-//                     </li>`
-
-// theList.insertAdjacentHTML("beforeend", toDoItem);
-// }
 
