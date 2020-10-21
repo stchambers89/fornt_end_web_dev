@@ -1,15 +1,18 @@
 var toDoList = [];
 
 
-
 //Define class
 let tasker = 
 {
     construct: function()
     {
+        /*loads on each need to check local storage for tasks, if empty run "normal"
+        if the todolist has items we need to read each item in the list and feed it to the create task function */
         this.selectElements();
         this.bindEvents();
         this.scanTaskList();
+
+        
     },
 
     selectElements: function()
@@ -23,15 +26,12 @@ let tasker =
 
     createTask: function() 
     {
-        let id = 0;
         //create blank variables
         let taskListItem, taskCheckbox, taskValue, taskButton, taskTrash;
 
         //create the list item
         taskListItem = document.createElement("li");
         taskListItem.setAttribute("class", "task");
-        taskListItem.setAttribute("id", id);
-        id++;
 
         //Create the checkbox
         taskCheckbox = document.createElement("input");
@@ -56,7 +56,7 @@ let tasker =
         taskListItem.appendChild(taskButton);
 
         //add actual task to the list
-        this.taskList.appendChild(taskListItem);
+        this.taskList.appendChild(taskListItem); 
     },
 
     error: function()
@@ -64,9 +64,15 @@ let tasker =
         this.errorMessage.style.display = "block";
     },
 
-    saveLocal: function()
+    saveLocal: function(task)
     {
-        toDoList.push(this.taskValue);
+        toDoList.push(task);
+        console.log(`the recent task value is ${task}`);
+        for(item in toDoList)
+        {
+            console.log(toDoList[item]);
+        }
+        
     },
 
     addTask: function()
@@ -80,10 +86,14 @@ let tasker =
         }
         else
         {
-            this.saveLocal()
+            this.saveLocal(taskValue)
             this.createTask();
             this.taskInput.value = "";
             this.scanTaskList();
+            for(item in toDoList)
+            {
+                console.log(item.taskValue);
+            }
         }
     },
 
