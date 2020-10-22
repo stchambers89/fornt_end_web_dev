@@ -2,6 +2,7 @@
 Blue: rgb(37, 107, 151)
 Green: rgb(80, 200, 120)
 Yellow: rgb(240, 183, 60)
+Dark Blue: rgb(7, 21, 46)
 */
 
 * {
@@ -36,6 +37,7 @@ html {
  background-color: rgb(37, 107, 151);
  color: #ffffff;
  padding: 15px;
+ margin-bottom: 15px;
 }
 
 .menu ul{
@@ -67,7 +69,6 @@ html {
    text-align: center;
    font-size: 12px;
    padding: 15px;
-   border-top: rgb(80, 200, 120);
    border-width: 2px;
  }
 
@@ -113,6 +114,53 @@ div.clear {
 
 .center {
    text-align: center;
+}
+
+#tasks > li.task_completed{
+   text-decoration: line-through;
+   background: grey;
+}
+
+#tasker > div.tasker_body {
+   list-style-type: none;
+}
+
+#tasker {
+  margin: auto;
+  width: 50%;
+  border: 3px solid rgb(7, 21, 46);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#tasker_bottom {
+   margin: auto;
+   align-self: center;
+}
+
+#tasks > li:nth-child(1) > input[type=checkbox] {
+   margin-right: 10px;
+}
+
+#tasks > li {
+   background: rgb(187, 187, 216);
+}
+
+#tasks > li:nth-child(odd) {
+   background: lightblue;
+}
+
+#input_task {
+   margin: 0 auto;
+}
+
+#error {
+
+}
+
+#tasks > li > button {
+   position: sticky;
+   right: 10px;
 }
 
 

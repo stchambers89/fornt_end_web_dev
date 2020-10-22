@@ -10,7 +10,7 @@ let tasker =
         
        // loads on each need to check local storage for tasks, if empty run "normal"
         //if the todolist has items we need to read each item in the list and feed it to the create task function 
-        if(toDoList != empty)
+        if(typeof toDoList !== 'undefined' && toDoList.length > 0)
         {
             for(let item in todolist)
             {
@@ -20,7 +20,7 @@ let tasker =
             this.bindEvents();
             this.scanTaskList();
         }
-        else if(TodoList == empty)
+        else //if(TodoList == empty)
         {
             this.selectElements();
             this.bindEvents();
