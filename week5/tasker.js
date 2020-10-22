@@ -6,13 +6,26 @@ let tasker =
 {
     construct: function()
     {
-        /*loads on each need to check local storage for tasks, if empty run "normal"
-        if the todolist has items we need to read each item in the list and feed it to the create task function */
-        this.selectElements();
-        this.bindEvents();
-        this.scanTaskList();
-
         
+        
+       // loads on each need to check local storage for tasks, if empty run "normal"
+        //if the todolist has items we need to read each item in the list and feed it to the create task function 
+        if(toDoList != empty)
+        {
+            for(let item in todolist)
+            {
+                this.LoadTask(item.value)
+            }
+            this.selectElements();
+            this.bindEvents();
+            this.scanTaskList();
+        }
+        else if(TodoList == empty)
+        {
+            this.selectElements();
+            this.bindEvents();
+            this.scanTaskList();
+        }        
     },
 
     selectElements: function()
@@ -53,6 +66,38 @@ let tasker =
         //connect elements to the list
         taskListItem.appendChild(taskCheckbox);
         taskListItem.appendChild(taskValue);
+        taskListItem.appendChild(taskButton);
+
+        //add actual task to the list
+        this.taskList.appendChild(taskListItem); 
+    },
+
+    LoadTask: function(savedValue) 
+    {
+        //create blank variables
+        let taskListItem, taskCheckbox, taskButton, taskTrash;
+
+        //create the list item
+        taskListItem = document.createElement("li");
+        taskListItem.setAttribute("class", "task");
+
+        //Create the checkbox
+        taskCheckbox = document.createElement("input");
+        taskCheckbox.setAttribute("type", "checkbox")
+
+        // create the delete button
+        taskButton = document.createElement("button");
+
+        //create the X icon
+        taskTrash = document.createElement("i");
+        taskTrash.setAttribute("class", "fas fa-times-circle");
+
+        //connect x Icon with delete button
+        taskButton.appendChild(taskTrash);
+
+        //connect elements to the list
+        taskListItem.appendChild(taskCheckbox);
+        taskListItem.appendChild(savedValue);
         taskListItem.appendChild(taskButton);
 
         //add actual task to the list
@@ -148,6 +193,13 @@ let tasker =
     {
         this.taskListChildren[i].remove();
         this.scanTaskList();
+        /*
+            loop through todo list,
+            {
+             if( value == taskListChildren[i])
+                remove item from the local storage list
+            }
+        */
     },
 
     completeTask: function(taskListItem, checkBox)
