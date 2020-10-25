@@ -96,18 +96,6 @@ p .code {
    color: rgba(0, 132, 255, 0.603);
 }
 
-
-.backToTop {
-   padding:2px;
-   margin-bottom: 6px;
-   
-}
-
-div.clear {
-   clear: both;
-   margin: 10px;
-}
-
 .clearfix::after {
    clear: both;
 }
@@ -116,53 +104,129 @@ div.clear {
    text-align: center;
 }
 
-#tasks > li.task_completed{
+
+
+/* ------------ container ------------ */
+.container{
+   padding:10px;
+   width:380px;
+   margin:0 auto;
+}
+
+/* ------------ header ------------ */
+.header{
+   width: 380px;
+   height:200px;
+   background-image: url('../img/bg2.jpg');
+   background-size: 100% 200%;
+   background-repeat: no-repeat;
+   border-radius: 15px 15px 0 0;
+   position: relative;
+}
+.clear{
+   width : 30px;
+   height: 30px;
+   position: absolute;
+   right:20px;
+   top: 20px;
+}
+.clear i{
+   font-size: 30px;
+   color: #FFF;
+}
+.clear i:hover{
+   cursor: pointer;
+   transform: rotate(45deg);
+}
+
+
+/* ------------ content ------------ */
+.content{
+   width:380px;
+   height: 350px;
+   max-height:350px;
+   background-color: #FFF;
+   overflow: auto;
+}
+.content::-webkit-scrollbar { 
+   display: none; 
+}
+.content ul{
+   padding:0;
+   margin:0;
+}
+.item{
+   width:380px;
+   height: 45px;
+   min-height: 45px;
+   position: relative;
+   border-bottom: 1px solid rgba(0,0,0,0.1);
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+.item i.co{
+   position: absolute;
+   font-size: 25px;
+   padding-left:5px;
+   left:15px;
+   top:10px;
+}
+.item i.co:hover{
+   cursor: pointer;
+}
+.fa-check-circle{
+   color:#6eb200;
+}
+.item p.text{
+   position: absolute;
+   padding:0;
+   margin:0;
+   font-size: 20px;
+   left:50px;
+   top:5px;
+   background-color: #FFF;
+   max-width:285px;
+}
+.lineThrough{
    text-decoration: line-through;
-   background: grey;
+   color : #ccc;
+}
+.item i.de{
+   position: absolute;
+   font-size: 25px;
+   right:15px;
+   top:10px;
+}
+.item i.de:hover{
+   color:#af0000;
+   cursor: pointer;
+}
+/* ------------ add item ------------ */
+.add-to-do{
+   position: relative;
+   width: 360px;
+   height:40px;
+   background-color: #FFF;
+   padding: 10px;
+   border-top: 1px solid rgba(0,0,0,0.1);
+}
+.add-to-do i{
+   position: absolute;
+   font-size: 40px;
+   color: #4162f6;
 }
 
-#tasker > div.tasker_body {
-   list-style-type: none;
+.add-to-do input{
+   position: absolute;
+   left: 50px;
+   height: 35px;
+   width: 310px;
+   background-color: transparent;
+   border: none;
+   font-size: 20px;
+   padding-left:10px;
 }
-
-#tasker {
-  margin: auto;
-  width: 50%;
-  border: 3px solid rgb(7, 21, 46);
-  padding: 10px;
-  border-radius: 5px;
-}
-
-#tasker_bottom {
-   margin: auto;
-   align-self: center;
-}
-
-#tasks > li:nth-child(1) > input[type=checkbox] {
-   margin-right: 10px;
-}
-
-#tasks > li {
-   background: rgb(187, 187, 216);
-}
-
-#tasks > li:nth-child(odd) {
-   background: lightblue;
-}
-
-#input_task {
-   margin: 0 auto;
-}
-
-#error {
-
-}
-
-#tasks > li > button {
-   position: sticky;
-   right: 10px;
-}
-
 
 /* screen parameters */
 /* For mobile phones: */
