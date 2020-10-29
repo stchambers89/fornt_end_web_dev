@@ -68,19 +68,25 @@ document.addEventListener("keyup", function(event)
 {
     if(event.keyCode == 13)
     {
-        const text = input.value;
-        if(text)
-        {
-            let task = new Task(text);
-            task.id = id;
-            buildTask(task);
-            taskList.push(task);
-            localStorage.setItem("TODO", JSON.stringify(taskList));
-            id++;
-        }
-        input.value = "";
+        addTask();
     }
 });
+
+function addTask()
+{
+    
+    const text = input.value;
+    if(text)
+    {
+        let task = new Task(text);
+        task.id = id;
+        buildTask(task);
+        taskList.push(task);
+        localStorage.setItem("TODO", JSON.stringify(taskList));
+        id++;
+    }
+    input.value = "";
+}
 
 /**********************************
 *        Responsive Tasks         *
