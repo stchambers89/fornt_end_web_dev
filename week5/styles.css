@@ -117,11 +117,12 @@ p .code {
 .header{
    width: 380px;
    height:200px;
-   background-image: "arch.jpg";
+   background-image: url("arch.jpg");
    background-size: 100% 200%;
    background-repeat: no-repeat;
    border-radius: 15px 15px 0 0;
    position: relative;
+   margin-bottom: 0em;
 }
 .clear{
    width : 30px;
@@ -176,7 +177,7 @@ p .code {
    cursor: pointer;
 }
 .fa-check-circle{
-   color:#6eb200;
+   color: rgb(75,111,161);
 }
 .item p.text{
    position: absolute;
@@ -205,8 +206,8 @@ p .code {
 /* ------------ add item ------------ */
 .add-to-do{
    position: relative;
-   width: 360px;
-   height:40px;
+   width: 380px;
+   height:60px;
    background-color: #FFF;
    padding: 10px;
    border-top: 1px solid rgba(0,0,0,0.1);
@@ -228,11 +229,13 @@ p .code {
    padding-left:10px;
 }
 
-body > div > div.add-to-do > button {
-   background: none;
-   border: none;
-   color: blue;
+#button{
+   background-color: rgb(231, 167, 216);
+   border-radius: 100%;
+   color:rgb(212, 55, 2);
    height: fit-content;
+   
+   
 }
 
 /* screen parameters */
