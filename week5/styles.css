@@ -114,7 +114,7 @@ p .code {
 }
 
 /* ------------ header ------------ */
-.header{
+.top{
    width: 380px;
    height:200px;
    background-image: url("arch.jpg");

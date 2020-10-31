@@ -66,7 +66,7 @@ function buildTask(task)
 
 document.addEventListener("keyup", function(event)
 {
-    if(event.code == "Enter")
+    if(event.key == "Enter")
     {
         addTask();
     }
@@ -86,6 +86,7 @@ function addTask()
         id++;
     }
     input.value = "";
+    document.getElementById("input").focus();
 }
 
 /**********************************
