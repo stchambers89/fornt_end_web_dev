@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+   
+    background-image: url("forest.jpeg");
+    color: #ffffff;
+    padding: 15px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+.race  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    padding: 1rem 2rem;
+    background-color: rgb(172, 174, 180);
+
+}
+
+.card {
+    padding: 20px;
+    font-size: 30px;
+    text-align: center bottom;
+    height: 20%;
+    margin: .5rem;
+    padding: .5rem;    
+}
+
+.race_info > ul{
+    list-style-type: none;
+    font-size: 18px;
+    color: black;
+}
+
+li.race_name{
+    color:rgb(34,139,34);
+    font-family: fantasy;
+}
+
+
+/*Race Images*/
+#dragonborn > div {
+    content:url("dragonborn.png");
+    width: 100%;
+    max-height:auto;
+}
+#dwarf > div {
+    content:url("dwarf.jpg");
+    width:100%;
+    height: auto;
+    background-color: white;
+}
+#elf > div {
+    content:url("elf.png");
+    width:100%;
+    height: auto;
+}
+#gnome > div {
+    content:url("gnome.png");
+    width:100%;
+    height: auto;
+}
+#half-elf > div {
+    content:url("half-elf.png");
+    width:100%;
+    height: auto;
+}
+#halfling > div {
+    content:url("halfling.png");
+    width:100%;
+    height: auto;
+}
+#human > div{
+    content:url("human.png");
+    width:100%;
+    height: auto;
+}
+#tiefling > div{
+    content:url("teifling.png");
+    width:100%;
+    height: auto;
+}

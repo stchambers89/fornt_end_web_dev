@@ -8,7 +8,7 @@ function getApi()
     .then( (response) => response.json())
     .then((data) => {
         let output = ''; 
-        console.log(data.results)
+        console.log(data)
         data.results.forEach(function(planet){
             output += ` <div class="planet_card">
                         <ul> 
@@ -25,3 +25,5 @@ function getApi()
         document.getElementById('output').innerHTML = output;
      });
 }
+
+getApi();
