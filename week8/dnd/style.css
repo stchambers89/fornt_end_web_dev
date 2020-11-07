@@ -4,7 +4,7 @@
 
 .header {
    
-    background-image: url("forest.jpeg");
+    background-image: url("forest.jpg");
     color: #ffffff;
     padding: 15px;
     width: 100%;
@@ -16,7 +16,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     padding: 1rem 2rem;
-    background-color: rgb(172, 174, 180);
+    background-color: rgb(153, 154, 149);
 
 }
 
@@ -48,7 +48,7 @@ li.race_name{
     max-height:auto;
 }
 #dwarf > div {
-    content:url("dwarf.jpg");
+    content:url("dwarf.png");
     width:100%;
     height: auto;
     background-color: white;

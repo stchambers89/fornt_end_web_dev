@@ -7,6 +7,9 @@ let race = "";
 
 /*****************************************
  * picture event listeners fire only once
+ *  I know there has to be a way to grab the id
+ * of the element and convert it to a string
+ * I, however, cannot find it. 
  *****************************************/
 document.getElementById('dragonborn').addEventListener("click", function()
 {
@@ -67,11 +70,6 @@ async function readApi(coreURL, race)
                 </div>`;
 
     document.getElementById(race+"_info").innerHTML = output;
-    
-     console.log(data);
-    console.log(data.alignment);
-    console.log(data.age);
-    console.log(data.name);
 }
 
 //readApi(coreURL, endpoint);
