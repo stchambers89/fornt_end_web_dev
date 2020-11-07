@@ -7,7 +7,7 @@ function getApi()
     fetch('https://swapi.dev/api/planets/')
     .then( (response) => response.json())
     .then((data) => {
-        let output = ''; // just put into html
+        let output = ''; 
         console.log(data.results)
         data.results.forEach(function(planet){
             output += ` <div class="planet_card">
