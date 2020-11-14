@@ -49,3 +49,27 @@ kbd {
   letter-spacing: .1rem;
   color: rgb(204, 220, 7);
 }
+
+.back {
+  border: .4rem solid rgba(218, 223, 236, 0.822);;
+  border-radius: .5rem;
+  margin: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem .5rem;
+  transition: all .07s ease;
+  width: 10rem;
+  text-align: center;
+  color: rgb(190, 250, 250);
+  background: rgba(0, 206, 233, 0.685);
+  text-shadow: 0 0 .5rem black;
+}
+
+#back {
+  position: fixed;
+  margin-top: 60rem;
+  margin-right: 115rem;
+
+  
+
+
+}
