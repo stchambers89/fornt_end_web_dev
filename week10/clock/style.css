@@ -57,3 +57,14 @@ body {
     top: 50%;
 }
 
+.back  {
+    width: 5em;
+    height: auto;
+    position: absolute;
+    margin-top: 15em;
+}
+
+body > a {
+    position: absolute;
+    margin-left: 1em;
+}
