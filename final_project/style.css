@@ -1,0 +1,39 @@
+.main {
+    border: 5px;
+    border-color: red;
+    border-style: dashed;
+}
+
+.playstyle {
+    border: 5px;
+    border-color: green;
+    border-style: solid;
+}
+
+.race {
+    border: 5px;
+    border-color: blue;
+    border-style: solid;
+}
+
+.class {
+    border: 5px;
+    border-color: orange;
+    border-style: solid;
+}
+
+.card {
+    border: 2px;
+    border-color: rgb(133, 79, 194);
+    border-style: dashed;
+}
+
+.collapsed > img {
+    width: 25%;
+    height: auto;
+}
+
+.open > img{
+    width: 80%;
+    height: auto;
+}
