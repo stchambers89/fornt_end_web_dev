@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
     
-<body onload="readApi()">  
+<body>  
 
     <div class="main">
         <div class="playstyle"> Playstyle
@@ -44,56 +44,65 @@
 
             <div class="collapsible"> 
                 <img src="./images/race/dragonborn.jpeg"><span class="title">Dragonborn</span></div>
-            <div class="content">
-                <p></p>
+            <div class="content" id="dragonborn">
+                <p id="dragonborn_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/race/dwarf.jpeg">Dwarf</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="dwarf">
+                <p id="dwarf_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/race/elf.jpeg">Elf</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="elf">
+                <p id="elf_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/race/gnome.jpeg">Gnome</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="gnome">
+                <p id="gnome_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/race/half_elf.jpeg">Half-Elf</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="half-elf">
+                <p id="half-elf_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/race/half_orc.jpeg">Half-Orc</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="half-orc">
+                <p id="half-orc_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/race/halfling.jpeg">Halfling</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="halfling">
+                <p id="halfling_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/race/human.jpeg">Human</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="human">
+                <p id="human_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/race/teifling.jpeg">Tiefling</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="tiefling">
+                <p id="tiefling_info"></p>
+                <button class="select">Select</button>
             </div>
             
         </div>
@@ -102,68 +111,79 @@
 
             <button class="collapsible"> 
                 <img src="images/class/barbarian.jpeg">Barbarian</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="barbarian">
+                <p id="barbarian_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/class/bard.jpeg">Bard</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="bard">
+                <p id="bard_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/class/cleric.jpeg">Cleric</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="cleric">
+                <p id="cleric_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/class/druid.jpeg">Druid</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="druid">
+                <p id="druid_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/class/fighter.jpeg">Fighter</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="fighter">
+                <p id="fighter_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/class/monk.jpeg">Monk</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="monk">
+                <p id="monk_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/class/ranger.jpeg">Ranger</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="ranger">
+                <p id="ranger_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/class/rouge.jpeg">Rouge</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="rouge">
+                <p id="rouge_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
             <img src="images/class/sorcerer.jpeg">Sorcerer</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="sorcerer">
+                <p id="sorcerer_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/class/warlock.jpeg">Warlock</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="warlock">
+                <p id="warlock_info"></p>
+                <button class="select">Select</button>
             </div>
 
             <button class="collapsible"> 
                 <img src="images/class/wizard.jpeg">Wizard</button>
-            <div class="content">
-                <p></p>
+            <div class="content" id="wizard">
+                <p id="wizard_info"></p>
+                <button class="select">Select</button>
             </div>
 
         
