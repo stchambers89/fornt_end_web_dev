@@ -28,23 +28,4 @@ for (let i=0; i < notelinks.length; i++)
 }
 
 
-const projects =
-[
-  {label: "Super Hero Quiz", url: "quiz/index.html"}
-]
-
-const projectList = document.getElementById("projectList");
-
-for (let i=0; i < projects.length; i++)
-{
-  let projectItem = document.createElement("li");
-  let anchor = document.createElement("a");
-
-  anchor.setAttribute("href", projects[i].url); 
-  anchor.innerText = projects[i].label;
-
-  projectItem.appendChild(anchor);
-  //projectList.appendChild(projectItem);
-  
-}
 
