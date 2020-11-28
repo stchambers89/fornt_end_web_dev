@@ -7,151 +7,166 @@
     <meta name="keywords" content = "D&D, Dungeons and dragons, character, create">
     <meta name="description" content = "A simplified introduction to D&D 5th edition.
                                         Create a first time character by play-style without
-                                        getting bogged down with the statistics or game mechanics">
+                                        getting bogged down with the statistics or game mechanics.
+                                        Perfect for Creating a quick NPC!">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--External Doc - CSS -->
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
     
-<body> 
+<body onload="readApi()">  
 
     <div class="main">
-        <div class="playstyle">
-            
-            <div class="cards collapsed">
+        <div class="playstyle"> Playstyle
 
-                <div class="card collapsed">
-                    <img src="images/playstyle/inyourface.jpg">
-                    <div class="information face">In Your Face</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/playstyle/shadows.png">
-                    <div class="information shadows">From the Shadows</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/playstyle/arcane.jpg">
-                    <div class="information arcane">Way of The Arcane</div>
-                </div>
+            <button class="collapsible"> 
+                <img src="images/playstyle/inyourface.jpg"><span class="title">In Your Face</span></button>
+            <div class="content">
+                <p></p>
             </div>
+
+            <button class="collapsible"> 
+                <img src="images/playstyle/shadows.png">From the Shadows</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/playstyle/arcane.jpg">Way of The Arcane</button>
+            <div class="content">
+                <p></p>
+            </div>
+            
         </div>
 
-        <div class="race">
+        <div class="race"> <span class="title">Race</span>
+
+            <div class="collapsible"> 
+                <img src="./images/race/dragonborn.jpeg"><span class="title">Dragonborn</span></div>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/race/dwarf.jpeg">Dwarf</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/race/elf.jpeg">Elf</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/race/gnome.jpeg">Gnome</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/race/half_elf.jpeg">Half-Elf</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/race/half_orc.jpeg">Half-Orc</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/race/halfling.jpeg">Halfling</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/race/human.jpeg">Human</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/race/teifling.jpeg">Tiefling</button>
+            <div class="content">
+                <p></p>
+            </div>
+            
+        </div>
+
+        <div class="class"> Character Class
+
+            <button class="collapsible"> 
+                <img src="images/class/barbarian.jpeg">Barbarian</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/class/bard.jpeg">Bard</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/class/cleric.jpeg">Cleric</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/class/druid.jpeg">Druid</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/class/fighter.jpeg">Fighter</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/class/monk.jpeg">Monk</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/class/ranger.jpeg">Ranger</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/class/rouge.jpeg">Rouge</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+            <img src="images/class/sorcerer.jpeg">Sorcerer</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/class/warlock.jpeg">Warlock</button>
+            <div class="content">
+                <p></p>
+            </div>
+
+            <button class="collapsible"> 
+                <img src="images/class/wizard.jpeg">Wizard</button>
+            <div class="content">
+                <p></p>
+            </div>
+
         
-            <div class="cardscollapsed">
-
-                <div class="card collapsed">
-                    <img src="./images/race/dragonborn.jpeg">
-                    <div class="information dragonborn">Dragonborn</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/race/dwarf.jpeg">
-                    <div class="information dwarf">Dwarf</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/race/elf.jpeg">
-                    <div class="information elf">Elf</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/race/gnome.jpeg">
-                    <div class="information gnome">Gnome</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/race/half_elf.jpeg">
-                    <div class="information Half-Elf">Half-Elf</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/race/half_orc.jpeg">
-                    <div class="information half_orc">Half-Orc</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/race/halfling.jpeg">
-                    <div class="information halfling">Halfling</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/race/human.jpeg">
-                    <div class="information human">Human</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/race/teifling.jpeg">
-                    <div class="information teifling">Tiefling</div>
-                </div>
-
-            </div>
-
-            
-        </div>
-
-        <div class="class">
-
-            <div class="cards collapsed">
-
-                <div class="card collapsed">
-                    <img src="images/class/barbarian.jpeg">
-                    <div class="information barbarian">Barbarian</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/bard.jpeg">
-                    <div class="information bard">Bard</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/cleric.jpeg">
-                    <div class="information cleric">Cleric</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/druid.jpeg">
-                    <div class="information druid">Druid</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/fighter.jpeg">
-                    <div class="information fighter">Fighter</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/monk.jpeg">
-                    <div class="information monk">Monk</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/ranger.jpeg">
-                    <div class="information ranger">Ranger</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/rouge.jpeg">
-                    <div class="information rouge">Rouge</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/sorcerer.jpeg">
-                    <div class="information sorcerer">Sorcerer</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/warlock.jpeg">
-                    <div class="information warlock">Warlock</div>
-                </div>
-
-                <div class="card collapsed">
-                    <img src="images/class/wizard.jpeg">
-                    <div class="information wizard">Wizard</div>
-                </div>
-
-            </div>
 
         </div>
     </div>
