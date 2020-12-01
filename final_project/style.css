@@ -1,7 +1,15 @@
 
+.main{
+    margin-left: 2%;
+    margin-right: 2%;
+}
 .collapsed > img {
     width: 25%;
     height: auto;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .collapsed {
@@ -23,13 +31,13 @@
     background-color: #f1f1f1;
 }
 
+.active:after {
+    content: "\2212";
+}
+
 img{
-    position: relative;
     right: 40%;
     margin-left: 20px;
-    
-
-    
 }
 
 .collapsible {
@@ -42,16 +50,29 @@ img{
     text-align: center;
     outline: none;
     font-size: 15px;
-  }
+}
+
+.collapsible:after {
+    content: '\002B';
+    color: rgb(0, 185, 0);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
   
-  .active, .collapsible:hover {
+.active, .collapsible:hover {
     background-color: rgb(172, 168, 168);
-  }
+}
+
+.active:after {
+    content: "\2212";
+}
   
 .content {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
+    width: fit-content;
     transition: max-height 0.8s ease-out;
     background-color: #f1f1f1;
 }
@@ -60,4 +81,21 @@ img{
     font-size: x-large;
     text-align: center;   
 
+}
+
+.select {
+    background-color: rgb(0, 185, 0);
+    color: white;
+    padding: 10px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+hr.line {
+    margin-right: 30px;
+    height: 1px;
+    border: none;
+    background-image: linear-gradient(to right, rgba(238,134,0,1), rgba(238, 135, 0, 0.281));
 }
