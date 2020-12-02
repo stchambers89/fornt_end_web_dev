@@ -3,13 +3,15 @@
     margin-left: 2%;
     margin-right: 2%;
 }
-.collapsed > img {
-    width: 25%;
-    height: auto;
-}
 
 p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.875em;
+}
+
+.headText{
+    font-variant: small-caps;
+    font-size: 1rem;
 }
 
 .collapsed {
@@ -27,17 +29,11 @@ p {
 .information {
     padding: 0 18px;
     display: none;
-    overflow: hidden;
     background-color: #f1f1f1;
 }
 
 .active:after {
     content: "\2212";
-}
-
-img{
-    right: 40%;
-    margin-left: 20px;
 }
 
 .collapsible {
@@ -71,10 +67,10 @@ img{
 .content {
     padding: 0 18px;
     max-height: 0;
-    overflow: hidden;
     width: fit-content;
     transition: max-height 0.8s ease-out;
     background-color: #f1f1f1;
+    overflow-x: hidden;
 }
 
 .title {
@@ -83,6 +79,7 @@ img{
 
 }
 
+/*the select button under each class and race*/
 .select {
     background-color: rgb(0, 185, 0);
     color: white;
@@ -90,11 +87,11 @@ img{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-weight: bold;
-
 }
 
+/*Orange fading line break*/
 hr.line {
-    margin-right: 30px;
+    margin-right: 80px;
     height: 1px;
     border: none;
     background-image: linear-gradient(to right, rgba(238,134,0,1), rgba(238, 135, 0, 0.281));
