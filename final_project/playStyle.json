@@ -1,0 +1,47 @@
+{
+    "playStyle": [
+ 
+    {
+        "id": "0",
+        "style": "Brazen",
+        "introHead": "Brazen and Bold",
+        "intro":  "Lines of solders muster across the field, the banner Lord yells something about honor and glory of the kingdom. While others seem skittish you have a thrill running up and down your spine and the taste of anticipation on your tongue. Where others cower you rush in, there has never been a problem that can’t be solved with an axe or a persuasive punch. These players love to stand out and revel in the fighting aspect of D&D. Classes that may interest you could be:",
+        "suggest": {"classes": 
+                    [
+                        {"class": "Barbarian"},
+                        {"class": "Cleric"},
+                        {"class": "Fighter"},
+                        {"class": "Monk"},
+                        {"class": "Ranger"}
+                    ]}
+    },
+
+    {
+        "id": "1",
+        "style": "Shadows",
+        "introHead": "From the Shadows",
+        "intro":  "Why be seen when you can pull the strings or get other’s hands dirty? Subtlety, a well-placed rumor, some courtly gossip, or on occasion a few coins slipping into a guard’s hands. These are the tools of your refined trade. While others go head long into an issue why not go around, after all you like controlling situations but not being the center of attention, too many knives to watch out for. And when your hands must get dirty make sure it’s dark, and you’re the one holding the blade. Classes that may interest you could be:",
+        "suggest": {"classes": 
+                    [
+                        {"class": "Bard"},
+                        {"class": "Rouge"}, 
+                        {"class": "Warlock"}
+                    ]}
+
+    },
+
+    {
+        "id": "2",
+        "style": "arcane",
+        "introHead": "Way of the Arcane",
+        "intro":  "Slowly moving your finger through the air, a thin line of arcane energy lingers as you complete a glyph and the fireplace roars to life. Magic makes life so much easier, only problem is first getting access to the power then wielding it. Magic can be learned many ways, through hard study, divine providence, being born of a magical being, or striking a deal, you know magic holds the answers to many of life’s mysteries. It also holds a bit of fun and a lot of power. You can fly, teleport, turn invisible, conjure creatures to aid you and much more. Your ability is only limited by your imagination and the price you are willing to pay.  Classes that may interest you could be:",
+        "suggest": {"classes": 
+                    [
+                        {"class": "Bard"},
+                        {"class": "Druid"}, 
+                        {"class": "Sorcerer"}, 
+                        {"class": "Warlock"}, 
+                        {"class": "Wizard"}
+                    ]}
+    }]
+}
