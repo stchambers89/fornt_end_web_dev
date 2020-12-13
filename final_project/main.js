@@ -45,19 +45,18 @@ async function readPlayStyle(playerStyle){
       i = index;
     }
   }
-  let suggestList = ""; 
-
-    let suggestLength = data.playStyle[i].suggest.classes.length;
-      for(let j = 0; j < suggestLength; j++) 
-      {
-        suggestList  += `<li> <p>${data.playStyle[i].suggest.classes[j].class}</p> <li>`;
-      }
+ 
+    let suggestList = data.playStyle[i].suggest;
+    console.log(data.playStyle[i].suggest);
+    for(let j = 0; j < suggestList.length; j++){
+          console.log(suggestList[j]);
+          document.getElementById(`${playerStyle}_list`).innerHTML += `<li> ${suggestList[j]} </li>`;
+        }
   
   let output = `
                 <p> <span class='headText'>${data.playStyle[i].introHead}</span>${line}${data.playStyle[i].intro} </p>`
 
   document.getElementById(`${playerStyle}_info`).innerHTML = output; 
-  document.getElementById(`${playerStyle}_list`).innerHTML = suggestList;
 }
 
 //gather race info from API and display
