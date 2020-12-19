@@ -1,3 +1,5 @@
+import {playerCharacter} from './playerCharacter.js'
+
 const coreURL = 'https://www.dnd5eapi.co/api/';
 const playStyleList = ['brazen', 'shadow', 'arcane'];
 const styleLength = playStyleList.length;
@@ -92,3 +94,7 @@ async function readClasses(playerClass){
 
   document.getElementById(`${playerClass}_info`).innerHTML = output; 
 }
+
+let character = new playerCharacter('Dragonborn', 'Paladin');
+
+console.log(character.displayCharacter());
