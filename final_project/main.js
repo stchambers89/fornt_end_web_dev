@@ -50,7 +50,6 @@ async function readPlayStyle(playerStyle){
  
     let suggestList = data.playStyle[i].suggest;
     for(let j = 0; j < suggestList.length; j++){
-          console.log(suggestList[j]);
           document.getElementById(`${playerStyle}_list`).innerHTML += `<li> ${suggestList[j]} </li>`;
         }
   

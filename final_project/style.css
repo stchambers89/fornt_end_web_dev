@@ -165,7 +165,7 @@ hr.line {
     grid-column: 5/8;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 870px) {
 
     .playstyle-container{
         grid-template-columns: 50% 50%;
@@ -227,7 +227,7 @@ hr.line {
     .class-container{
         grid-template-columns: 100%;
     }
-    
+
     .class-item1, .class-item3, .class-item5,
     .class-item7, .class-item9, .class-item11,
     .class-item2, .class-item4, .class-item6,
