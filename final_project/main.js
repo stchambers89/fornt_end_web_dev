@@ -20,7 +20,7 @@ for (let card of coll){
     } 
     else {
       content.style.maxHeight =  "400px";
-      content.style.overflow.y = "scroll";
+      //content.style.overflow.y = "scroll";
     } 
     let contentName = content.id;
     if(raceList.some(a => a === contentName)){
@@ -49,7 +49,6 @@ async function readPlayStyle(playerStyle){
   }
  
     let suggestList = data.playStyle[i].suggest;
-    console.log(data.playStyle[i].suggest);
     for(let j = 0; j < suggestList.length; j++){
           console.log(suggestList[j]);
           document.getElementById(`${playerStyle}_list`).innerHTML += `<li> ${suggestList[j]} </li>`;
