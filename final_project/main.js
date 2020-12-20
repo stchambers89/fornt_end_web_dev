@@ -8,14 +8,34 @@ const classList = ['barbarian', 'bard', 'cleric', 'druid', 'fighter', 'monk', 'r
 const classLength = classList.length;
 const line = "<hr class='line'>";
 const coll = document.getElementsByClassName("collapsible");
+const selectRace = document.getElementsByClassName("selectRace");
+const selectClass = document.getElementsByClassName("selectClass");
+const createCharacter = document.getElementById('createCharacter');
+let character = new playerCharacter('', '');
 
+//Listen for Users Race selection
+for(let submit of selectRace){
+  submit.addEventListener("click", function(){
+    let content = this.parentNode.id;
+    character.playerRace = content;
+    console.log(character.displayCharacter());
+  })
+}
+
+//Listen for Users Race selection
+for(let submit of selectClass){
+  submit.addEventListener("click", function(){
+    let content = this.parentNode.id;
+    character.playerClass = content;
+    console.log(character.displayCharacter());
+  })
+}
 //Listen for user even and fire appropriate function
 for (let card of coll){
   card.addEventListener("click", function(){
     this.classList.toggle("active");
     let content = this.nextElementSibling;
     if (content.style.maxHeight){ 
-      // *may have fixed with auto scroll* need aditional conditional to look at parent node, playstyle/race/class depends on how large the box is. ALso need to not make this hard coded for different view heights. 
       content.style.maxHeight = null;
     } 
     else {
@@ -35,6 +55,8 @@ for (let card of coll){
     
   });
 }
+ //listen for create charater button
+createCharacter.addEventListener('click', getStats)
 
 //Player Style Suggestions
 async function readPlayStyle(playerStyle){
@@ -93,6 +115,27 @@ async function readClasses(playerClass){
   document.getElementById(`${playerClass}_info`).innerHTML = output; 
 }
 
-let character = new playerCharacter('Dragonborn', 'Paladin');
 
-console.log(character.displayCharacter());
+//Get player stats
+async function getStats(){
+  console.log(`within get stats`);
+  const incomingResponse = await fetch('class_stats.json');
+  const data = await incomingResponse.json();
+  let i;
+  for(let index = 0; index < classLength; index++){
+    if(character.playerClass === classList[index]){
+      i = index;
+    }
+  }
+    character.str = data.class_stats[i].str;
+    character.con = data.class_stats[i].con;
+    character.dex = data.class_stats[i].dex;
+    character.int = data.class_stats[i].int;
+    character.wis = data.class_stats[i].wis;
+    character.cha = data.class_stats[i].cha;
+
+  let output = character.displayCharacter();
+  
+  document.getElementById('createdCharacter').innerHTML = output;
+
+}
